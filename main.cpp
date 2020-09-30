@@ -76,48 +76,48 @@ using namespace std                                             ; // Defines sco
 
 //*************************************************************************************************************************************************
 //
-//	Function Prototypes:-
+//	   Function Prototypes:-
 //
-//		1,static void OutputFoundFile()			           ;
-//		2,static void OutputFoundFileFor1D()	           ;
-//		3,void SingleSearch()				     	           ;
-//		4,void SingleArray()					                 ;
-//		5,void MultiArray()						              ;
-//		6,void PopulateSearchTerms2D()			           ;
+//		1,static void OutputFoundFile()			                   ;
+//		2,static void OutputFoundFileFor1D()	                   ;
+//		3,void SingleSearch()				     	                   ;
+//		4,void SingleArray()					                         ;
+//		5,void MultiArray()						                      ;
+//		6,void PopulateSearchTerms2D()			                   ;
 //
 //		7,void Search2DFragment(int x1, int y1,
 //							    int x2, int y2,
-//							    int x3, int y3)                ;
+//							    int x3, int y3)                        ;
 //
-//		8,void Search1DFragment(int x1, int x2, int x3)   ;
-//		9,void CreateFoundWordFile()                      ;
-//		10,void CreateFoundWordFile1D()                   ;
+//		8,void Search1DFragment(int x1, int x2, int x3)           ;
+//		9,void CreateFoundWordFile()                              ;
+//		10,void CreateFoundWordFile1D()                           ;
 //
 //***************************************************************************************************************************************************
 
 
-void OutputFoundFile()                                                  ;
+void OutputFoundFile()                                                      ;
 
-void OutputFoundFileFor1D()                                             ;
+void OutputFoundFileFor1D()                                                 ;
 
-void SingleSearch()                                                     ;
+void SingleSearch()                                                         ;
 
-void SingleArray()                                                      ;
+void SingleArray()                                                          ;
 
-void MultiArray()                                                       ;
+void MultiArray()                                                           ;
 
-void PopulateSearchTerms2D()                                            ;
+void PopulateSearchTerms2D()                                                ;
 
-void CreateFoundWordFile()                                              ;
+void CreateFoundWordFile()                                                  ;
 
-void CreateFoundWordFile1D()                                            ;
+void CreateFoundWordFile1D()                                                ;
 
 void Search2DFragment(
         int x_position1, int y_position1,
         int x_position2, int y_position2,
-        int x_position3, int y_position3)                               ;
+        int x_position3, int y_position3)                                   ;
 
-void Search1DFragment(int x_position1, int x_position2, int x_position3);
+void Search1DFragment(int x_position1, int x_position2, int x_position3)    ;
 
 //****************************************************************************************************************************************************
 //
@@ -127,11 +127,9 @@ void Search1DFragment(int x_position1, int x_position2, int x_position3);
 //
 //****************************************************************************************************************************************************
 
-
-void Menu() // Declares a function
+void Menu()
 {
     char selection                                                          ;
-    //Ask user for input
     cout << "--------------------Menu:---------------------" << endl << endl;
     cout << "Choose which search. " << endl                                 ;
     cout << "1. Single Line " << endl                                       ;
@@ -143,29 +141,29 @@ void Menu() // Declares a function
     switch (selection) // Declares a switch statement
     {
         case '1': {
-            cout << "1 Chosen \n" << endl   ;
+            cout << "1 Chosen \n" << endl                                   ;
         }
-            SingleSearch()                  ;
-            CreateFoundWordFile1D()         ;
-            SingleArray()                   ;
-            OutputFoundFileFor1D()          ;
-            break                           ; //Breaks out of the case
+            SingleSearch()                                                  ;
+            CreateFoundWordFile1D()                                         ;
+            SingleArray()                                                   ;
+            OutputFoundFileFor1D()                                          ;
+            break                                                           ; //Breaks out of the case
 
         case '2': {
-            cout << "2 Chosen \n" << endl   ;
+            cout << "2 Chosen \n" << endl                                   ;
         }
-            PopulateSearchTerms2D()         ;
-            CreateFoundWordFile()           ;
-            MultiArray()                    ;
-            OutputFoundFile()               ;
-            break                           ;
+            PopulateSearchTerms2D()                                         ;
+            CreateFoundWordFile()                                           ;
+            MultiArray()                                                    ;
+            OutputFoundFile()                                               ;
+            break                                                           ;
 
 
         case '3': {
-            exit(1)                         ;
+            exit(1)                                                         ;
         }
         default:
-            exit(1)                         ;
+            exit(1)                                                         ;
     }
 }
 
@@ -178,25 +176,25 @@ void Menu() // Declares a function
 //****************************************************************************************************************************************************
 
 void PopulateSearchTerms2D() {
-    ifstream infile("search2d.txt")             ;
+    ifstream infile("search2d.txt")                                                         ;
     if (!infile) {
-        cout << "ERROR: "                       ;
-        cout << "Cannot open input file \n"     ;
+        cout << "ERROR: "                                                                   ;
+        cout << "Cannot open input file \n"                                                 ;
     }
 
 
     while (infile >> ch) {
         if (ch != '\n') {
-            SearchTerms2D[y][x] = ch            ;
-            x++                                 ;
+            SearchTerms2D[y][x] = ch                                                        ;
+            x++                                                                             ;
             if (infile.peek() == '\n') {
-                x = 0                           ;
-                y++                             ;
+                x = 0                                                                       ;
+                y++                                                                         ;
             }
         }
     }
 
-    cout << endl << endl                        ;
+    cout << endl << endl                                                                    ;
 
     cout << "--------------------Words To Search For:-------------------- " << endl << endl ;
     for (y = 0; y != 16; y++) {
@@ -218,21 +216,21 @@ void PopulateSearchTerms2D() {
 //****************************************************************************************************************************************************
 
 void MultiArray() {
-    ifstream infile("text2D.txt")                   ;
+    ifstream infile("text2D.txt")                                                       ;
     if (!infile) {
-        cout << "ERROR: "                           ;
-        cout << "Cannot open input file \n"         ;
+        cout << "ERROR: "                                                               ;
+        cout << "Cannot open input file \n"                                             ;
     }
 
-    x = 0                                           ;
-    y = 0                                           ;
+    x = 0                                                                               ;
+    y = 0                                                                               ;
     while (infile >> ch) {
         if (ch != '\n') {
-            Grid2D[y][x] = ch                       ;
-            x++                                     ;
+            Grid2D[y][x] = ch                                                           ;
+            x++                                                                         ;
             if (infile.peek() == '\n') {
-                x = 0                               ;
-                y++                                 ;
+                x = 0                                                                   ;
+                y++                                                                     ;
             }
         }
     }
