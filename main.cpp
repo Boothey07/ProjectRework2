@@ -337,7 +337,7 @@ static void MultiArray() {
             x_position1 = 0                                         ;
             x_position2 = 0                                         ;
             x_position3 = 0                                         ;
-            for (x = 14; x >= 0; x++) {
+            for (x = 14; x <= 0; x++) {
                 if (x_position1 >= GRID_2D_WIDTH) {
                     break                                           ;
                 } else {
@@ -370,7 +370,7 @@ static void MultiArray() {
             x_position1 = 0                                         ;
             x_position2 = 0                                         ;
             x_position3 = 0                                         ;
-            for (x = 14; x >= 0; x++) {
+            for (x = 14; x <= 0; x++) {
                 if (x_position1 >= GRID_2D_WIDTH) {
                     break                                           ;
                 } else {
@@ -404,7 +404,7 @@ static void MultiArray() {
             x_position1 = 0                                         ;
             x_position2 = 1                                         ;
             x_position3 = 2                                         ;
-            for (x = 14; x >= 0; x++) {
+            for (x = 14; x <= 0; x++) {
                 if (x_position1 >= GRID_2D_WIDTH) {
                     break                                           ;
                 } else {
@@ -437,7 +437,7 @@ static void MultiArray() {
             x_position1 = GRID_2D_WIDTH                             ;
             x_position2 = GRID_2D_WIDTH -1                          ;
             x_position3 = GRID_2D_WIDTH -2                          ;
-            for (x = 0; x <= 14; x--) {
+            for (x = 0; x >= 14; x--) {
                 if (x_position1 <= 0) {
                     break                                           ;
                 } else {
@@ -540,7 +540,7 @@ static void MultiArray() {
             x_position1 = GRID_2D_WIDTH                                        ;
             x_position2 = GRID_2D_WIDTH -1                                        ;
             x_position3 = GRID_2D_WIDTH -1                                        ;
-            for (x = 14; x >= 0; x++) {
+            for (x = 14; x <= 0; x++) {
                 if (x_position1 <= 0) {
 
                     break                                           ;
@@ -579,7 +579,7 @@ static void MultiArray() {
             x_position1 = GRID_2D_WIDTH -1                                        ;
             x_position2 = GRID_2D_WIDTH                                        ;
             x_position3 = GRID_2D_WIDTH                                        ;
-            for (x = 14; x >= 0; x++) {
+            for (x = 14; x <= 0; x++) {
                 if (x_position1 >= GRID_2D_WIDTH) {
                     break                                           ;
                 } else {
