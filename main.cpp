@@ -29,48 +29,48 @@
 //		Constants
 //
 //*********************************************************************************************************************************************
-const int GRID_2D_HEIGHT = 4L                                   ; // Defines the Max Height of the 2D Grid
-const int GRID_2D_WIDTH = 14L                                   ; // Defines the Max Width of the 2D Grid
-char Grid2D[GRID_2D_HEIGHT][GRID_2D_WIDTH]                      ; // Declares a 2D array with the parameters GRID_2D_HEIGHT and GRID_2D_WIDTH.
+static const int GRID_2D_HEIGHT = 4L                                   ; // Defines the Max Height of the 2D Grid
+static const int GRID_2D_WIDTH = 14L                                   ; // Defines the Max Width of the 2D Grid
+static char Grid2D[GRID_2D_HEIGHT][GRID_2D_WIDTH]                      ; // Declares a 2D array with the parameters GRID_2D_HEIGHT and GRID_2D_WIDTH.
 
-const int GRID_2D_FOUND_HEIGHT = 4L                             ; // Defines the Max Height of the 2D Grid for Found Words
-const int GRID_2D_FOUND_WIDTH = 14L                             ; // Sets a constant value of 14
-char Grid_2D_Found[GRID_2D_FOUND_HEIGHT][GRID_2D_FOUND_WIDTH]   ;  // Declares a 2D array with the parameters Grid_2D_FoundHEIGHT and Grid_2D_FoundWIDTH.
+static const int GRID_2D_FOUND_HEIGHT = 4L                             ; // Defines the Max Height of the 2D Grid for Found Words
+static const int GRID_2D_FOUND_WIDTH = 14L                             ; // Sets a constant value of 14
+static char Grid_2D_Found[GRID_2D_FOUND_HEIGHT][GRID_2D_FOUND_WIDTH]   ;  // Declares a 2D array with the parameters Grid_2D_FoundHEIGHT and Grid_2D_FoundWIDTH.
 
-const int TERMS_2D_HEIGHT = 17L                                 ; // Sets a constant value of 17
-const int TERMS_2D_WIDTH = 3L                                   ; // Sets a constant value of 3
-char SearchTerms2D[TERMS_2D_HEIGHT][TERMS_2D_WIDTH]             ; // Declares a 2D array with the parameters TERMS_2D_HEIGHT and TERMS_2D_WIDTH.
+static const int TERMS_2D_HEIGHT = 17L                                 ; // Sets a constant value of 17
+static const int TERMS_2D_WIDTH = 3L                                   ; // Sets a constant value of 3
+static char SearchTerms2D[TERMS_2D_HEIGHT][TERMS_2D_WIDTH]             ; // Declares a 2D array with the parameters TERMS_2D_HEIGHT and TERMS_2D_WIDTH.
 
-const int GRID_1D_WIDTH = 14L                                   ; // Sets a constant value of 14
-char Grid1D[GRID_1D_WIDTH]                                      ; // Declares a 1D with the constant GRID_1D_WIDTH
+static const int GRID_1D_WIDTH = 14L                                   ; // Sets a constant value of 14
+static char Grid1D[GRID_1D_WIDTH]                                      ; // Declares a 1D with the constant GRID_1D_WIDTH
 
-const int GRID_1D_FOUND_WIDTH = 14L                             ; //Sets a constant value of 14
-char Grid1DFound[GRID_1D_FOUND_WIDTH]                           ; //Declares an array with the constant GRID_1D_FOUND_WIDTH
+static const int GRID_1D_FOUND_WIDTH = 14L                             ; //Sets a constant value of 14
+static char Grid1DFound[GRID_1D_FOUND_WIDTH]                           ; //Declares an array with the constant GRID_1D_FOUND_WIDTH
 
-const int TERMS1DWIDTH = 6L                                     ; // Sets a constant value of 6
-const int TERMS1DHEIGHT = 3L                                    ; // Sets a constant value 3
-char SearchTerms1D[TERMS1DHEIGHT][TERMS1DWIDTH]                 ; // Declares a 2D array with the parameters TERMS1DHEIGHT and TERMS1DWIDTH.
+static const int TERMS1DWIDTH = 6L                                     ; // Sets a constant value of 6
+static const int TERMS1DHEIGHT = 3L                                    ; // Sets a constant value 3
+static char SearchTerms1D[TERMS1DHEIGHT][TERMS1DWIDTH]                 ; // Declares a 2D array with the parameters TERMS1DHEIGHT and TERMS1DWIDTH.
 
-const int FOUND_WORDS_HEIGHT = 16L                              ; // Sets a constant value of 16
-const int FOUND_WORDS_WIDTH = 3L                                ; // Sets a constant value of 3
-int Height = 0L                                                 ; //Declares a variable and sets it to the value 0
-char FoundWords[FOUND_WORDS_HEIGHT][FOUND_WORDS_WIDTH]          ; //Declares an array with the parameters FOUND_WORDS_HEIGHT and FOUND_WORDS_WIDTH.
+static const int FOUND_WORDS_HEIGHT = 16L                              ; // Sets a constant value of 16
+static const int FOUND_WORDS_WIDTH = 3L                                ; // Sets a constant value of 3
+static int Height = 0L                                                 ; //Declares a variable and sets it to the value 0
+static char FoundWords[FOUND_WORDS_HEIGHT][FOUND_WORDS_WIDTH]          ; //Declares an array with the parameters FOUND_WORDS_HEIGHT and FOUND_WORDS_WIDTH.
 
-const int FOUND_WORDS_1D_HEIGHT = 6L                            ; // Sets a constant value of 6
-const int FOUND_WORDS_1D_WIDTH = 3L                             ; // Sets a constant value of 3
-int Height1D = 0L                                               ; //Declares a variable and sets it to the value 0
-char FoundWords1D[FOUND_WORDS_1D_HEIGHT][FOUND_WORDS_1D_WIDTH]  ; //Declares an array with the parameters FOUND_WORDS_HEIGHT and FOUND_WORDS_WIDTH.
+static const int FOUND_WORDS_1D_HEIGHT = 6L                            ; // Sets a constant value of 6
+static const int FOUND_WORDS_1D_WIDTH = 3L                             ; // Sets a constant value of 3
+static int Height1D = 0L                                               ; //Declares a variable and sets it to the value 0
+static char FoundWords1D[FOUND_WORDS_1D_HEIGHT][FOUND_WORDS_1D_WIDTH]  ; //Declares an array with the parameters FOUND_WORDS_HEIGHT and FOUND_WORDS_WIDTH.
 
 
-const int Upper_Bound_2D = 16L                                  ;
-const int Upper_Bound_1D = 6L                                   ;
-const int Lower_Bound = 2L                                      ;
-int Positions[Upper_Bound_2D][Lower_Bound]                      ;
-int Positions1D[Upper_Bound_1D][Lower_Bound]                    ;
+static const int Upper_Bound_2D = 16L                                  ;
+static const int Upper_Bound_1D = 6L                                   ;
+static const int Lower_Bound = 2L                                      ;
+static int Positions[Upper_Bound_2D][Lower_Bound]                      ;
+static int Positions1D[Upper_Bound_1D][Lower_Bound]                    ;
 
-int x = 0                                                       ;
-int y = 0                                                       ;
-char ch                                                         ; // Declares a char ch
+static int x = 0L                                                      ;
+static int y = 0L                                                      ;
+static char ch                                                         ; // Declares a char ch
 
 using namespace std                                             ; // Defines scope
 
@@ -96,28 +96,28 @@ using namespace std                                             ; // Defines sco
 //***************************************************************************************************************************************************
 
 
-void OutputFoundFile()                                                      ;
+static void OutputFoundFile()                                                      ;
 
-void OutputFoundFileFor1D()                                                 ;
+static void OutputFoundFileFor1D()                                                 ;
 
-void SingleSearch()                                                         ;
+static void SingleSearch()                                                         ;
 
-void SingleArray()                                                          ;
+static void SingleArray()                                                          ;
 
-void MultiArray()                                                           ;
+static void MultiArray()                                                           ;
 
-void PopulateSearchTerms2D()                                                ;
+static void PopulateSearchTerms2D()                                                ;
 
-void CreateFoundWordFile()                                                  ;
+static void CreateFoundWordFile()                                                  ;
 
-void CreateFoundWordFile1D()                                                ;
+static void CreateFoundWordFile1D()                                                ;
 
-void Search2DFragment(
+static void Search2DFragment(
         int x_position1, int y_position1,
         int x_position2, int y_position2,
         int x_position3, int y_position3)                                   ;
 
-void Search1DFragment(int x_position1, int x_position2, int x_position3)    ;
+static void Search1DFragment(int x_position1, int x_position2, int x_position3)    ;
 
 //****************************************************************************************************************************************************
 //
@@ -127,7 +127,7 @@ void Search1DFragment(int x_position1, int x_position2, int x_position3)    ;
 //
 //****************************************************************************************************************************************************
 
-void Menu()
+static void Menu()
 {
     char selection                                                          ;
     cout << "--------------------Menu:---------------------" << endl << endl;
@@ -175,7 +175,7 @@ void Menu()
 //
 //****************************************************************************************************************************************************
 
-void PopulateSearchTerms2D() {
+static void PopulateSearchTerms2D() {
     ifstream infile("search2d.txt")                                                         ;
     if (!infile) {
         cout << "ERROR: "                                                                   ;
@@ -197,8 +197,8 @@ void PopulateSearchTerms2D() {
     cout << endl << endl                                                                    ;
 
     cout << "--------------------Words To Search For:-------------------- " << endl << endl ;
-    for (y = 0; y != 16; y++) {
-        for (x = 0; x != 3; x++) {
+    for (y = 0; y <= GRID_2D_WIDTH; y++) {
+        for (x = 0; x <= GRID_2D_HEIGHT; x++) {
             cout << SearchTerms2D[y][x]                                                     ;
 
             cout << endl                                                                    ;
@@ -215,7 +215,7 @@ void PopulateSearchTerms2D() {
 //
 //****************************************************************************************************************************************************
 
-void MultiArray() {
+static void MultiArray() {
     ifstream infile("text2D.txt")                                                       ;
     if (!infile) {
         cout << "ERROR: "                                                               ;
@@ -236,8 +236,8 @@ void MultiArray() {
     }
 
     cout << "--------------------Word Search Grid:-------------------- " << endl << endl;
-    for (y = 0; y != 4; y++) {
-        for (x = 0; x != 14; x++) {
+    for (y = 0; y <= GRID_2D_HEIGHT; y++) {
+        for (x = 0; x <= GRID_2D_WIDTH; x++) {
             cout << Grid2D[y][x]                                                        ;
         }
         cout << endl                                                                    ;
@@ -262,16 +262,15 @@ void MultiArray() {
 //
 //****************************************************************************************************************************************************
 
-
-    for (y = 0; y <= 4; y++) {
+    for (y = 0; y <= GRID_2D_HEIGHT; y++) {
         if (y_position1 >= 4) {
             break                                                                       ;
         } else {
             x_position1 = 0                                                             ;
             x_position2 = 1                                                             ;
             x_position3 = 2                                                             ;
-            for (x = 0; x <= 14; x++) {
-                if (x_position3 >= 14) {
+            for (x = 0; x <= GRID_2D_HEIGHT; x++) {
+                if (x_position3 >= GRID_2D_WIDTH) {
                     break                                                               ;
                 } else {
                     Search2DFragment(x_position1, y_position1,
@@ -301,9 +300,9 @@ void MultiArray() {
         if (y_position1 >= 4) {
             break                                                   ;
         } else {
-            x_position1 = 14                                        ;
-            x_position2 = 13                                        ;
-            x_position3 = 12                                        ;
+            x_position1 = GRID_2D_WIDTH                             ;
+            x_position2 = GRID_2D_WIDTH -1                          ;
+            x_position3 = GRID_2D_WIDTH -2                          ;
             for (x = 14; x >= 0; x--) {
                 if (x_position1 <= 0) {
                     break                                           ;
@@ -331,15 +330,15 @@ void MultiArray() {
     y_position2 = 1                                                 ;
     y_position3 = 2                                                 ;
 
-    for (y = 0; y <= 4; y++) {
-        if (y_position1 >= 4) {
+    for (y = 0; y <= GRID_2D_HEIGHT; y++) {
+        if (y_position1 >= GRID_2D_HEIGHT) {
             break                                                   ;
         } else {
             x_position1 = 0                                         ;
             x_position2 = 0                                         ;
             x_position3 = 0                                         ;
             for (x = 14; x >= 0; x++) {
-                if (x_position1 >= 14) {
+                if (x_position1 >= GRID_2D_WIDTH) {
                     break                                           ;
                 } else {
                     Search2DFragment(x_position1, y_position1,
@@ -372,7 +371,7 @@ void MultiArray() {
             x_position2 = 0                                         ;
             x_position3 = 0                                         ;
             for (x = 14; x >= 0; x++) {
-                if (x_position1 >= 14) {
+                if (x_position1 >= GRID_2D_WIDTH) {
                     break                                           ;
                 } else {
                     Search2DFragment(x_position3, y_position3,
@@ -406,7 +405,7 @@ void MultiArray() {
             x_position2 = 1                                         ;
             x_position3 = 2                                         ;
             for (x = 14; x >= 0; x++) {
-                if (x_position1 >= 14) {
+                if (x_position1 >= GRID_2D_WIDTH) {
                     break                                           ;
                 } else {
                     Search2DFragment(x_position3, y_position3,
@@ -435,9 +434,9 @@ void MultiArray() {
         if (y_position1 <= 0) {
             break                                                   ;
         } else {
-            x_position1 = 14                                        ;
-            x_position2 = 13                                        ;
-            x_position3 = 12                                        ;
+            x_position1 = GRID_2D_WIDTH                             ;
+            x_position2 = GRID_2D_WIDTH -1                          ;
+            x_position3 = GRID_2D_WIDTH -2                          ;
             for (x = 0; x <= 14; x--) {
                 if (x_position1 <= 0) {
                     break                                           ;
@@ -464,15 +463,15 @@ void MultiArray() {
     y_position2 = 1                                                 ;
     y_position3 = 1                                                 ;
 
-    for (y = 0; y <= 4; y++) {
+    for (y = 0; y <= GRID_2D_HEIGHT; y++) {
         if (y_position1 >= 4) {
             break                                                   ;
         } else {
             x_position1 = 0                                         ;
             x_position2 = 0                                         ;
             x_position3 = 1                                         ;
-            for (x = 0; x <= 14; x++) {
-                if (x_position1 >= 14) {
+            for (x = 0; x <= GRID_2D_WIDTH; x++) {
+                if (x_position1 >= GRID_2D_WIDTH) {
                     break                                           ;
                 } else {
                     Search2DFragment(x_position1, y_position1,
@@ -497,13 +496,13 @@ void MultiArray() {
     y_position3 = 1                                                 ;
 
 
-    for (y = 0; y <= 4; y++) {
-        if (y_position1 >= 4) {
+    for (y = 0; y <= GRID_2D_HEIGHT; y++) {
+        if (y_position1 >= GRID_2D_HEIGHT) {
             break                                                   ;
         } else {
-            x_position1 = 14                                        ;
-            x_position2 = 14                                        ;
-            x_position3 = 13                                        ;
+            x_position1 = GRID_2D_WIDTH                                       ;
+            x_position2 = GRID_2D_WIDTH                             ;
+            x_position3 = GRID_2D_WIDTH -1                                        ;
             for (x = 14; x >= 0; x--) {
                 if (x_position1 <= 0) {
                     break                                           ;
@@ -534,13 +533,13 @@ void MultiArray() {
     y_position2 = 0                                                 ;
     y_position3 = 1                                                 ;
 
-    for (y = 0; y <= 4; y++) {
-        if (y_position1 >= 4) {
+    for (y = 0; y <= GRID_2D_HEIGHT; y++) {
+        if (y_position1 >= GRID_2D_HEIGHT) {
             break                                                   ;
         } else {
-            x_position1 = 14                                        ;
-            x_position2 = 13                                        ;
-            x_position3 = 13                                        ;
+            x_position1 = GRID_2D_WIDTH                                        ;
+            x_position2 = GRID_2D_WIDTH -1                                        ;
+            x_position3 = GRID_2D_WIDTH -1                                        ;
             for (x = 14; x >= 0; x++) {
                 if (x_position1 <= 0) {
 
@@ -573,15 +572,15 @@ void MultiArray() {
     y_position2 = 0                                                 ;
     y_position3 = 1                                                 ;
 
-    for (y = 0; y <= 4; y++) {
-        if (y_position1 >= 4) {
+    for (y = 0; y <= GRID_2D_HEIGHT; y++) {
+        if (y_position1 >= GRID_2D_HEIGHT) {
             break                                                   ;
         } else {
-            x_position1 = 13                                        ;
-            x_position2 = 14                                        ;
-            x_position3 = 14                                        ;
+            x_position1 = GRID_2D_WIDTH -1                                        ;
+            x_position2 = GRID_2D_WIDTH                                        ;
+            x_position3 = GRID_2D_WIDTH                                        ;
             for (x = 14; x >= 0; x++) {
-                if (x_position1 >= 14) {
+                if (x_position1 >= GRID_2D_WIDTH) {
                     break                                           ;
                 } else {
 
@@ -605,7 +604,7 @@ void MultiArray() {
 //
 //****************************************************************************************************************************************************
 
-void Search2DFragment(int x_position1, int y_position1,
+static void Search2DFragment(int x_position1, int y_position1,
                       int x_position2, int y_position2,
                       int x_position3, int y_position3)
 {
@@ -627,7 +626,7 @@ void Search2DFragment(int x_position1, int y_position1,
     compstring.push_back(char2)                                     ;
     compstring.push_back(char3)                                     ;
 
-    for (int i = 0; i < 17; i++) {
+    for (int i = 0; i < TERMS_2D_HEIGHT; i++) {
         searchterm = ""                                             ;
         searchterm += SearchTerms2D[i][0]                           ;
         searchterm += SearchTerms2D[i][1]                           ;
@@ -663,7 +662,7 @@ void Search2DFragment(int x_position1, int y_position1,
 //
 //****************************************************************************************************************************************************
 
-void CreateFoundWordFile() {
+static void CreateFoundWordFile() {
     ifstream infile("text2D.txt")                                   ;
     if (!infile) {
         cout << "ERROR: "                                           ;
@@ -693,11 +692,11 @@ void CreateFoundWordFile() {
 //	Purpose:- Writes the to previously generated text file. Outputs the successfully found words.
 //
 //****************************************************************************************************************************************************
-void OutputFoundFile() {
+static void OutputFoundFile() {
     ofstream outfile("LeftCharecters2D.txt")                                                            ;
     outfile << "--------------------Words To Search For:-------------------- " << endl << endl          ;
-    for (y = 0; y != 16; y++) {
-        for (x = 0; x != 3; x++) {
+    for (y = 0; y <= TERMS_2D_HEIGHT; y++) {
+        for (x = 0; x <= TERMS_2D_WIDTH; x++) {
             outfile << SearchTerms2D[y][x]                                                              ;
         }
         outfile << endl                                                                                 ;
@@ -706,8 +705,8 @@ void OutputFoundFile() {
 
     outfile << "--------------------Word Search Grid:-------------------- " << endl << endl             ;
 
-    for (y = 0; y != 4; y++) {
-        for (x = 0; x != 14; x++) {
+    for (y = 0; y <= GRID_2D_HEIGHT; y++) {
+        for (x = 0; x <= GRID_2D_WIDTH; x++) {
             outfile << Grid2D[y][x]                                                                     ;
         }
         outfile << endl                                                                                 ;
@@ -717,7 +716,7 @@ void OutputFoundFile() {
     cout << endl                                                                                        ;
     outfile << "--------------------Found Words:-------------------- " << endl << endl                  ;
 
-    for (y = 0; y < 16; y++) {
+    for (y = 0; y < TERMS_2D_HEIGHT; y++) {
         outfile << FoundWords[y][0]
                 << FoundWords[y][1]
                 << FoundWords[y][2]
@@ -728,8 +727,8 @@ void OutputFoundFile() {
     }
     cout << "--------------------Charecters Left In The Grid:-------------------- " << endl << endl     ;
     outfile << "--------------------Charecters Left In The Grid:-------------------- " << endl << endl  ;
-    for (y = 0; y < 4; y++) {
-        for (x = 0; x < 14; x++) {
+    for (y = 0; y < GRID_2D_HEIGHT; y++) {
+        for (x = 0; x < GRID_2D_WIDTH; x++) {
             cout << Grid_2D_Found[y][x]                                                                 ;
             outfile << Grid_2D_Found[y][x]                                                              ;
         }
@@ -773,8 +772,8 @@ void SingleSearch() {
     cout << endl << endl                                                                                ;
     cout << "--------------------Search Terms:-------------------- " << endl << endl                    ;
 
-    for (y = 0; y != 6; y++) {
-        for (x = 0; x != 3; x++) {
+    for (y = 0; y <= TERMS1DHEIGHT; y++) {
+        for (x = 0; x <= TERMS1DWIDTH; x++) {
             cout << SearchTerms1D[y][x]                                                                 ;
         }
         cout << endl                                                                                    ;
@@ -809,7 +808,7 @@ void SingleArray() {
     }
     cout << endl << endl                                                            ;
     cout << "--------------------WordSearch:-------------------- " << endl << endl  ;
-    for (x = 0; x != 14; x++) {
+    for (x = 0; x <= GRID_2D_WIDTH; x++) {
         cout << Grid1D[x]                                                           ;
 
     }
@@ -830,8 +829,8 @@ void SingleArray() {
 //****************************************************************************************************************************************************
 
     //Horizontal Search.
-    for (x = 0; x <= 14; x++) {
-        if (x_position3 >= 14) {
+    for (x = 0; x <= GRID_1D_WIDTH; x++) {
+        if (x_position3 >= GRID_1D_WIDTH) {
             break                                                                   ;
         } else {
             Search1DFragment(x_position1, x_position2, x_position3)                 ;
@@ -867,7 +866,7 @@ void Search1DFragment(int x_position1, int x_position2, int x_position3) {
     compstring.push_back(char2)                                                     ;
     compstring.push_back(char3)                                                     ;
 
-    for (int i = 0; i < 6; i++) {
+    for (int i = 0; i < TERMS1DHEIGHT; i++) {
         searchterm = ""                                                             ;
         searchterm += SearchTerms1D[i][0]                                           ;
         searchterm += SearchTerms1D[i][1]                                           ;
@@ -878,7 +877,7 @@ void Search1DFragment(int x_position1, int x_position2, int x_position3) {
                  << " Location: "
                  << x_positionPos
                  << endl                                                            ;
-            Positions1D[Height1D][1] = x_positionPos                                ;
+            Positions1D[Height1D][1]  = x_positionPos                               ;
 
             FoundWords1D[Height1D][0] = char1                                       ;
             FoundWords1D[Height1D][1] = char2                                       ;
@@ -899,7 +898,7 @@ void Search1DFragment(int x_position1, int x_position2, int x_position3) {
 //	Purpose:- Generates a text file for the words found successfully.
 //
 //****************************************************************************************************************************************************
-void CreateFoundWordFile1D() {
+static void CreateFoundWordFile1D() {
     ifstream infile("text1.txt")                                                    ;
     if (!infile) {
         cout << "ERROR: "                                                           ;
@@ -924,11 +923,11 @@ void CreateFoundWordFile1D() {
 //	Purpose:- Outputs to the previously generated file.
 //
 //****************************************************************************************************************************************************
-void OutputFoundFileFor1D() {
+static void OutputFoundFileFor1D() {
     ofstream outfile("LeftCharecters1D.txt")                                                            ;
     outfile << "--------------------Words To Search For:-------------------- " << endl << endl          ;
-    for (y = 0; y != 6; y++) {
-        for (x = 0; x != 3; x++) {
+    for (y = 0; y <= TERMS1DHEIGHT; y++) {
+        for (x = 0; x <= TERMS1DWIDTH; x++) {
             outfile << SearchTerms1D[y][x]                                                              ;
         }
         outfile << endl                                                                                 ;
@@ -937,7 +936,7 @@ void OutputFoundFileFor1D() {
     cout << "\n"                                                                                        ;
     outfile << "--------------------Word Search Grid:-------------------- " << endl << endl             ;
 
-    for (x = 0; x != 14; x++) {
+    for (x = 0; x <= GRID_1D_WIDTH; x++) {
         outfile << Grid1D[x]                                                                            ;
     }
     outfile << endl                                                                                     ;
@@ -946,7 +945,7 @@ void OutputFoundFileFor1D() {
     outfile << endl                                                                                     ;
     outfile << "--------------------Found Words:-------------------- " << endl << endl                  ;
 
-    for (y = 0; y < 3; y++) {
+    for (y = 0; y < TERMS1DWIDTH; y++) {
         outfile << FoundWords1D[y][0]
                 << FoundWords1D[y][1]
                 << FoundWords1D[y][2]
@@ -957,7 +956,7 @@ void OutputFoundFileFor1D() {
     outfile << "--------------------Charecters Left In The Grid:-------------------- " << endl << endl  ;
     cout << "--------------------Charecters Left In The Grid:-------------------- " << endl << endl     ;
 
-    for (x = 0; x < 14; x++) {
+    for (x = 0; x < GRID_1D_WIDTH; x++) {
         cout << Grid1DFound[x]                                                                          ;
         outfile << Grid1DFound[x]                                                                       ;
     }
